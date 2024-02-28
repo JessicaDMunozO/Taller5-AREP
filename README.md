@@ -20,6 +20,9 @@ Las siguientes instrucciones permiten que obtenga una copia del proyecto en func
    debe acceder al directorio que contiene el proyecto. Cambie el puerto de acceso con `set PORT=34000`. Luego, debe descargar
    las dependencias del proyecto, para esto ejecute el comando `mvn clean install`. Después, para compilar ejecute el comando `mvn package` y por último ejecute el comando
    `java -cp "target/classes;target/dependency/*" co.edu.escuelaing.sparkdockerdemolive.SparkWebServer`.
+
+   **Nota**
+   Si tiene Mac o Linux cambie el ; por :
    
 3. Con Docker
    
