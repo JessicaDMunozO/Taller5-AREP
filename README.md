@@ -22,6 +22,7 @@ Las siguientes instrucciones permiten que obtenga una copia del proyecto en func
    `java -cp "target/classes;target/dependency/*" co.edu.escuelaing.sparkdockerdemolive.SparkWebServer`.
 
    **Nota**
+   
    Si tiene Mac o Linux cambie el ; por :
    
 3. Con Docker
@@ -76,6 +77,7 @@ Y el cálculo de la magnitud de un vector
 
 ## Construido con
 Maven - Gestión de dependencias
+
 Docker - Creación y ejecución de contenedores
 
 ## Versiones
