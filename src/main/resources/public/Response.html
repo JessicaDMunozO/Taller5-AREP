@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Spark server</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h1>Function</h1>
-        <form action="sin">
-            <label for="title">Sin:</label><br>
-            <input type="text" id="num" name="number"><br><br>
-            <input type="button" value="Submit" onclick="loadGetMsg()">
-        </form> 
-        <div id="getrespmsg"></div>
 
-        <script>
-            function loadGetMsg() {
-            let number = document.getElementById("num").value;
-            const xhttp = new XMLHttpRequest();
-            xhttp.onload = function () {
-            document.getElementById("getrespmsg").innerHTML =
-                this.responseText;
-            };
-            xhttp.open("GET", "sin/:val" + number);
-            xhttp.send();
-            }
-        </script>
-    </body>
+<head>
+    <title>Spark server</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="responseScript.js"></script>
+    <form id="sinForm">
+        <label for="title">Sin:</label><br>
+        <input type="text" id="num" name="number"><br>
+        <input type="button" value="Submit" onclick="sinForm()" class="submit_button">
+    </form>
+    <div id="sinmsg"></div><br>
+
+    <form id="cosForm">
+        <label for="title">Cos:</label><br>
+        <input type="text" id="num" name="number"><br>
+        <input type="button" value="Submit" onclick="cosForm()" class="submit_button">
+    </form>
+    <div id="cosmsg"></div><br>
+
+    <form id="palindromeForm">
+        <label for="title">Palindrome:</label><br>
+        <input type="text" id="word" name="word"><br>
+        <input type="button" value="Submit" onclick="palindromeForm()" class="submit_button">
+    </form>
+    <div id="palmsg"></div><br>
+
+    <form id="vectorForm">
+        <label for="title">Vector:</label><br>
+        <input type="text" id="val1" name="val1"><br><br>
+        <input type="text" id="val2" name="val2"><br>
+        <input type="button" value="Submit" onclick="vectorForm()" class="submit_button">
+    </form>
+    <div id="vecmsg"></div><br>
+
+</body>
+
 </html>
