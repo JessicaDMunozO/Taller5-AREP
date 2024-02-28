@@ -10,13 +10,13 @@ function sinForm() {
 }
 
 function cosForm() {
-    let number = document.getElementById("num").value;
+    let number2 = document.getElementById("num2").value;
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function () {
         document.getElementById("cosmsg").innerHTML =
             this.responseText;
     };
-    xhttp.open("GET", "/cos/" + number);
+    xhttp.open("GET", "/cos/" + number2);
     xhttp.send();
 }
 
