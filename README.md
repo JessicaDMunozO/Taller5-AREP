@@ -17,7 +17,7 @@ Las siguientes instrucciones permiten que obtenga una copia del proyecto en func
 1. Por terminal
    
    Para obtener el proyecto y ejecutarlo, debe ser descargado en formato zip o puede ser clonado desde el repositorio de GitHub. Con el proyecto en su máquina,
-   debe acceder al directorio que contiene el proyecto. Puedes cambiar el puerto de acceso con `set PORT=34000`. Luego, debe descargar
+   debe acceder al directorio que contiene el proyecto. Cambie el puerto de acceso con `set PORT=34000`. Luego, debe descargar
    las dependencias del proyecto, para esto ejecute el comando `mvn clean install`. Después, para compilar ejecute el comando `mvn package` y por último ejecute el comando
    `java -cp "target/classes;target/dependency/*" co.edu.escuelaing.sparkdockerdemolive.SparkWebServer`.
    
