@@ -1,7 +1,7 @@
 # Taller 5 - AREP
 En este taller, se desarrolló una aplicación basada en el microframework de Spark, enfocada en servicios GET para calcular funciones trigonométricas como seno y coseno, 
 identificar palíndromos y determinar la magnitud de vectores en dos dimensiones. Además, el cliente puede llamar asincrónamente estas funciones por medio de formularios 
-independientes. Además, se creó un contenedor Docker configurado en la máquina local y se subió la imagen a un repositorio en DockerHub para facilitar el despliegue y 
+independientes. También, se creó un contenedor Docker configurado en la máquina local y se subió la imagen a un repositorio en DockerHub para facilitar el despliegue y 
 la distribución de la aplicación.
 
 ## Empezando
@@ -10,15 +10,15 @@ Las siguientes instrucciones permiten que obtenga una copia del proyecto en func
 ### Prerrequisitos
 1. Maven y JDK para compilar y ejecutar el proyecto.
 2. Docker para poder descargar la imagen y ejecutarla.
-3. Verificar que el puerto 46000 esté disponible para que el servidor web lo pueda usar sin inconvenientes.
+3. Verificar disponibilidad del puerto para que el servidor web lo pueda usar sin inconvenientes.
 4. Tener conexión a internet.
 
 ### Instalación
 1. Por terminal
    
    Para obtener el proyecto y ejecutarlo, debe ser descargado en formato zip o puede ser clonado desde el repositorio de GitHub. Con el proyecto en su máquina,
-   debe acceder al directorio que contiene el proyecto. Puedes cambiar el puerto de acceso con `set PORT=34000`. Luego, debe descargar las dependencias del proyecto,
-   para esto ejecute el comando `mvn clean install`. Después, para compilar ejecute el comando `mvn package` y por último ejecute el comando
+   debe acceder al directorio que contiene el proyecto. Puedes cambiar el puerto de acceso con `set PORT=34000`. Luego, debe descargar
+   las dependencias del proyecto, para esto ejecute el comando `mvn clean install`. Después, para compilar ejecute el comando `mvn package` y por último ejecute el comando
    `java -cp "target/classes;target/dependency/*" co.edu.escuelaing.sparkdockerdemolive.SparkWebServer`.
    
 3. Con Docker
